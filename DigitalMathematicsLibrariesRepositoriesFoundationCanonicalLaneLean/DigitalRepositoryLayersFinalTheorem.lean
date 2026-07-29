@@ -1,0 +1,16 @@
+import canonicalLaneMathlib.AdmissibleClass
+import HautevilleHouse.DigitalMathematicsLibrariesRepositoriesFoundationCanonicalLaneLean.DigitalRepositoryLayersBridge
+import HautevilleHouse.DigitalMathematicsLibrariesRepositoriesFoundationCanonicalLaneLean.DigitalRepositoryLayersGate
+
+namespace HautevilleHouse
+namespace DigitalMathematicsLibrariesRepositoriesFoundationCanonicalLaneLean
+
+def ConstrainedDigitalRepositoryLayersClosure (A : AdmissibleClass) : Prop :=
+  bridgeClosed A ∧ gateClosed A
+
+theorem constrained_digital_repository_layers_endgame (A : AdmissibleClass) :
+  ConstrainedDigitalRepositoryLayersClosure A := by
+  exact And.intro (bridge_from_admissible_class A) (gate_from_admissible_class A)
+
+end DigitalMathematicsLibrariesRepositoriesFoundationCanonicalLaneLean
+end HautevilleHouse

@@ -1,0 +1,16 @@
+import canonicalLaneMathlib.AdmissibleClass
+import HautevilleHouse.DigitalMathematicsLibrariesRepositoriesFoundationCanonicalLaneLean.DigitalRepositoryLayers
+import HautevilleHouse.DigitalMathematicsLibrariesRepositoriesFoundationCanonicalLaneLean.DigitalRepositoryLayersEvidence
+
+namespace HautevilleHouse
+namespace DigitalMathematicsLibrariesRepositoriesFoundationCanonicalLaneLean
+
+def bridgeClosed (A : AdmissibleClass) : Prop :=
+  RepositoryLayerClosed A.object.toRepositoryLayerPackage
+
+theorem bridge_from_admissible_class (A : AdmissibleClass) :
+  bridgeClosed A := by
+  exact A.object.conclusion
+
+end DigitalMathematicsLibrariesRepositoriesFoundationCanonicalLaneLean
+end HautevilleHouse
